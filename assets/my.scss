@@ -1,0 +1,224 @@
+@import "variables";
+
+// ヘッダー
+
+.UserPage-header,
+.UserDetailsHeader {
+  background-color: var(--nico-dark) !important;
+}
+
+.UserDetailsHeader-nickname {
+  color: var(--text-primary) !important;
+}
+
+.UserDetailsHeader-account,
+.UserDetailsStatusItem-linkLabel,
+.Dropdown-button {
+  color: var(--text-secondary) !important;
+}
+
+.Dropdown-button:hover,
+.ShareButton_grey:hover,
+.NC-ThreePointMenu-button:hover {
+  background-color: var(--nico-dark-hover) !important;
+}
+
+.NC-ThreePointMenu-button {
+  border-radius: 50%;
+}
+
+// ニコニコだと何故か:afterでホバー時の背景色を指定しているので無効化する
+.NC-ThreePointMenu-button:hover:after {
+  background: none !important;
+}
+
+.NiconicoPoint {
+  background-color: var(--nico-dark-1) !important;
+}
+
+.ProgressBar.UserDetailsHeader-levelBar {
+  background-color: var(--nico-dark-3) !important;
+}
+
+.SearchContainer {
+  .CrossSearch-rowSelector {
+    background-color: var(--search-selector) !important;
+    border-color: var(--nico-dark-border) !important;
+  }
+
+  .CrossSearch-rowService {
+    color: var(--text-secondary) !important;
+
+    &.active {
+      color: var(--text-primary) !important;
+    }
+  }
+
+  .CrossSearch-form {
+    background-color: var(--nico-dark-secondary) !important;
+    border-color: var(--nico-dark-border) !important;
+
+    .CrossSearch-input {
+      color: var(--text-primary) !important;
+
+      &::placeholder {
+        color: var(--text-secondary) !important;
+      }
+    }
+  }
+}
+
+.PersonalFrame {
+  .PersonalFrame-body {
+    background-color: var(--nico-dark-secondary) !important;
+    border-color: var(--nico-dark-border) !important;
+
+    a {
+      color: var(--text-primary) !important;
+    }
+  }
+}
+
+.OtherMypageLinks, .NC-ThreePointMenu-menu {
+  background-color: var(--dropdown-background) !important;
+
+  .OtherMypageLinks-link, .UserDetailsMenu-item, .NicorepoItemMenu-item {
+    color: var(--text-primary) !important;
+
+    &:hover {
+      background-color: var(--dropdown-background-hover) !important;
+    }
+  }
+}
+
+.PcUniTop468x60NorthAdContainer-skeleton,
+.UserDetailsHeaderSkeleton-icon,
+.UserDetailsHeaderSkeleton-nickname,
+.UserDetailsHeaderSkeleton-account,
+.UserDetailsHeaderSkeleton-statusLabel,
+.UserDetailsHeaderSkeleton-statusValue,
+.UserDetailsHeaderSkeleton-description {
+  background: var(--nico-dark-secondary) !important;
+}
+
+.MainMenuContainer-menu {
+  background-color: var(--body) !important;
+  box-shadow: none !important;
+}
+
+.NC-Tabs {
+  background-color: var(--body) !important;
+
+  .NC-Tab:not(.active):not(:hover) {
+    color: var(--text-secondary) !important;
+  }
+}
+
+.UserDetailsContainer:after {
+  background-color: var(--body-border) !important;
+}
+
+// 左側のメニュー
+.SubMenuLink-label:not(:hover) {
+  color: var(--text-secondary) !important;
+}
+
+.RadioItem {
+  & > label:before {
+    border-color: var(--radio-color) !important;
+  }
+
+  & > input:not(:checked) + label:after {
+    background-color: var(--radio-color) !important;
+  }
+}
+
+.ModalActionButton {
+  background-color: var(--modal-action-button-background) !important;
+  color: var(--modal-action-button-text) !important;
+  box-shadow: none !important;
+
+  &:hover {
+    background-color: var(--modal-action-button-background-hover) !important;
+  }
+}
+
+.NicorepoItem-item {
+  background-color: var(--nicorepo-item-background) !important;
+  border-color: var(--nicorepo-item-border) !important;
+
+  .NicorepoItem-senderName:not(:hover) {
+    color: var(--text-primary) !important;
+  }
+
+  .NicorepoItem-activityCreatedAt:not(.NicorepoItem-activityCreatedAt_new), .NicorepoItem-activityDescription {
+    color: var(--text-secondary) !important;
+  }
+
+  a:not(:hover) {
+    .NicorepoItem-contentDetailTitle {
+      color: var(--text-primary);
+    }
+  }
+
+  a:visited:not(:hover) {
+    .NicorepoItem-contentDetailTitle {
+      color: var(--text-secondary);
+    }
+  }
+
+  .ContentLabel {
+    background-color: var(--nicorepo-item-content-label);
+  }
+}
+
+.NicorepoItemSkeleton {
+  background-color: var(--nicorepo-item-background) !important;
+  border-color: var(--nicorepo-item-border) !important;
+
+  .NicorepoItemSkeleton-senderIcon,
+  .NicorepoItemSkeleton-senderName,
+  .NicorepoItemSkeleton-activityDescription,
+  .NicorepoItemSkeleton-contentThumbnail,
+  .NicorepoItemSkeleton-contentDetailLabel,
+  .NicorepoItemSkeleton-contentDetailTitle {
+    background-color: var(--nicorepo-item-skeleton) !important;
+  }
+}
+
+.PageTopButton {
+  background-color: var(--nico-dark) !important;
+
+  path {
+    fill: var(--text-secondary) !important;
+  }
+}
+
+.RecommendUserContainer-title {
+  color: var(--text-secondary) !important;
+}
+
+.UserItem {
+  &:hover {
+    box-shadow: none !important;
+  }
+
+  .UserItem-link {
+    color: var(--text-secondary) !important;
+
+    .UserItem-content {
+      background-color: var(--nicorepo-item-background);
+      border-color: var(--nicorepo-item-border);
+
+      .UserItem-description {
+        color: var(--text-secondary) !important;
+      }
+    }
+  }
+
+  .UserItem-link:not(:hover) {
+    .UserItem-nickname {
+      color: var(--text-primary) !important;
+    }
+  }
+}

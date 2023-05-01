@@ -1,0 +1,53 @@
+:root {
+  --nico-dark: hsl(0, 0%, 15%);
+  --nico-dark-1: hsl(0, 0%, 17%);
+  --nico-dark-2: hsl(0, 0%, 19%);
+  --nico-dark-3: hsl(0, 0%, 21%);
+  --nico-dark-4: hsl(0, 0%, 23%);
+  --nico-dark-secondary: hsl(0, 0%, 25%);
+  --nico-dark-secondary-1: hsl(0, 0%, 27%);
+  --nico-dark-secondary-2: hsl(0, 0%, 29%);
+  --nico-dark-border: hsl(0, 0%, 30%);
+  --nico-dark-hover: #333333;
+  --body: hsl(0, 0%, 7%);
+  --body-border: hsl(0, 0%, 12%);
+
+  --text-primary: #ffffff;
+  --text-secondary: #ccc;
+  --text-meta-value: #999;
+  --text-link: hsl(200, 100%, 39%);
+  --search-selector: hsl(210, 5%, 25%);
+
+  --dropdown-background: var(--nico-dark-secondary);
+  --dropdown-background-secondary: var(--nico-dark-secondary-2);
+  --dropdown-background-hover: var(--nico-dark-secondary-2);
+  --dropdown-border: hsl(0, 0%, 31%);
+  --dropdown-button-hover: hsl(0, 0%, 33%);
+
+  --radio-color: hsl(0, 0%, 20%);
+
+  --modal-action-button-background: var(--nico-dark);
+  --modal-action-button-background-hover: var(--nico-dark-secondary);
+  --modal-action-button-text: var(--text-secondary);
+
+  --nicorepo-item-background: hsl(0, 0%, 15%);
+  --nicorepo-item-border: hsl(0, 0%, 17%);
+  --nicorepo-item-skeleton: hsl(0, 0%, 19%);
+  --nicorepo-item-content-label: hsl(0, 0%, 11%);
+
+  --badge-background: var(--nico-dark);
+  --badge-border: hsl(0, 0%, 9%);
+  --badge-text: var(--text-secondary);
+  --dic-icon-background: hsl(0, 0%, 53%);
+  --dic-icon-background-hover: hsl(0, 0%, 38%);
+
+  --tag-edit-button-background: hsl(0, 0%, 18%);
+  --tag-edit-button-text: hsl(0, 0%, 68%);
+
+  --comment-input-background: var(--nico-dark);
+  --comment-input-border: var(--nico-dark-2);
+
+  --like-button-background: var(--nico-dark);
+  --like-button-border: var(--nico-dark-2);
+  --like-button-text: var(--text-primary);
+}

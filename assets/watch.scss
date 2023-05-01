@@ -1,0 +1,565 @@
+@import "variables";
+
+.HeaderContainer {
+  background-color: var(--body) !important;
+}
+
+.SeriesBreadcrumbs {
+  path {
+    fill: var(--text-secondary) !important;
+  }
+
+  a {
+    color: var(--text-link) !important;
+  }
+}
+
+.VideoTitle {
+  color: var(--text-primary) !important;
+}
+
+.VideoDescription-html {
+  a {
+    color: var(--text-link) !important;
+  }
+}
+
+.VideoDescriptionSeriesContainer-headerRight {
+  .VideoDescriptionSeriesContainer-headerRow1 {
+    path {
+      fill: var(--text-secondary) !important;
+    }
+
+    .VideoDescriptionSeriesContainer-label {
+      color: var(--text-secondary) !important;
+    }
+  }
+
+  .VideoDescriptionSeriesContainer-headerRow2 {
+    a {
+      color: var(--text-link) !important;
+    }
+  }
+}
+
+.VideoDescriptionSeriesContainer-body {
+  .VideoDescriptionSeriesContainer-itemTitle {
+    color: var(--text-link) !important;
+  }
+}
+
+.NC-CreatorSupportAccepting-content {
+  background-color: var(--badge-background) !important;
+}
+
+.NC-CreatorSupportAccepting-arrow {
+  background-color: var(--badge-background) !important;
+}
+
+.VideoDescriptionSeriesContainer {
+  border-top-color: var(--body-border) !important;
+}
+
+.VideoOwnerInfo-links {
+  .VideoOwnerInfo-pageLinks a {
+    color: var(--text-link) !important;
+  }
+
+  .VideoOwnerUploadedLink {
+    border-color: var(--text-link) !important;
+  }
+
+  .VideoOwnerUploadedLink-button:visited {
+    color: var(--text-link) !important;
+  }
+}
+
+.VideoDescriptionExpander {
+  .VideoDescriptionExpander-switchExpand {
+    background: linear-gradient(90deg, hsla(0, 0%, 96%, 0), var(--body) 16%) !important;
+  }
+
+  .VideoDescriptionExpander-switch {
+    color: var(--text-link) !important;
+  }
+}
+
+.FollowButton.is-following {
+  .FollowButton-button {
+    background-color: var(--text-secondary) !important;
+  }
+
+  .FollowButton-label {
+    color: var(--text-secondary) !important;
+  }
+}
+
+.VideoMetaContainer > *, .VideoMetaOverflowMenuContainer {
+  border-color: var(--body-border) !important;
+  box-shadow: -1px 0 0 0 var(--body-border) !important;
+}
+
+.VideoUploadDateMeta,
+.VideoViewCountMeta,
+.CommentCountMeta,
+.MylistCountMeta,
+.VideoGenreMeta,
+.GenreRankMeta {
+  .VideoUploadDateMeta-title,
+  .VideoViewCountMeta-title,
+  .CommentCountMeta-title,
+  .MylistCountMeta-title,
+  .VideoGenreMeta-title,
+  .GenreRankMeta-genreName {
+    color: var(--text-secondary) !important;
+  }
+
+  .VideoUploadDateMeta-dateTimeLabel,
+  .VideoViewCountMeta-counter,
+  .CommentCountMeta-counter,
+  .MylistCountMeta-counter,
+  .VideoGenreMeta-genreName,
+  .GenreRankMeta-yesterdayRank {
+    color: var(--text-meta-value) !important;
+  }
+
+  a, .GenreRankMeta-highestPast {
+    color: var(--text-link) !important;
+  }
+}
+
+.TagItem {
+  background-color: var(--badge-background) !important;
+  border-color: var(--badge-border) !important;
+
+  .TagItem-name {
+    color: var(--badge-text) !important;
+  }
+}
+
+.TagContainer-editButton,
+.NGSettingPanelContainer-openUserNGRegisterButton {
+  background-color: var(--tag-edit-button-background) !important;
+  color: var(--tag-edit-button-text) !important;
+
+  &:hover {
+    background-color: var(--text-link) !important;
+    color: var(--text-primary) !important;
+  }
+}
+
+.OwnerNicoliveBanner {
+  background-color: var(--nico-dark) !important;
+
+  .OwnerNicoliveBanner-title {
+    color: var(--text-primary) !important;
+  }
+}
+
+.ControllerBoxCommentAreaContainer {
+  background: #000 !important;
+  border-right-color: var(--body-border) !important;
+}
+
+.CommentShutter:empty {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.MainContainer {
+  box-shadow: none !important;
+}
+
+.CommentPostContainer-commandInput, .CommentPostContainer-commentInput {
+  background-color: var(--comment-input-background) !important;
+  border-color: var(--comment-input-border) !important;
+
+  input, textarea {
+    color: var(--text-primary) !important;
+
+    &::placeholder {
+      color: var(--text-secondary) !important;
+    }
+  }
+}
+
+.EasyCommentContainer {
+  background-color: #000 !important;
+
+  .EasyCommentContainer-caption {
+    color: var(--text-secondary) !important;
+  }
+
+  .EasyCommentButton {
+    background-color: var(--comment-input-background) !important;
+    border-color: var(--comment-input-border) !important;
+    color: var(--text-secondary) !important;
+  }
+
+  .EasyCommentContainer-scrollButton {
+    border-color: var(--comment-input-border) !important;
+    background-color: var(--comment-input-background) !important;
+
+    path {
+      fill: var(--text-secondary) !important;
+    }
+  }
+
+  .EasyCommentContainer-prevButtonBox {
+    background: linear-gradient(270deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, .94), #000) !important;
+  }
+
+  .EasyCommentContainer-nextButtonBox {
+    background: linear-gradient(90deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, .94), #000) !important;
+  }
+}
+
+.VideoMenuContainer::after, .NextPlayVideoContainer {
+  border-bottom-color: var(--body-border) !important;
+}
+
+.MainContainer-playerPanel,
+.VideoMenuContainer-areaLeft,
+.VideoMenuContainer-areaRight {
+  background-color: #000 !important;
+}
+
+.NextPlayVideoContainer-controls,
+.NextPlayVideoContainer-continuousLabel,
+.WatchRecommendation-heading {
+  color: var(--text-secondary) !important;
+}
+
+.MainContainer-playerPanel {
+  .MainContainer-videoMenuSkeletonItem {
+    background-color: var(--text-secondary) !important;
+  }
+
+  .VideoMenuContainer-areaLeft .VideoMenuContainer-button {
+    fill: var(--text-secondary) !important;
+  }
+
+  .UadButtonBalloon {
+    background-color: var(--nico-dark) !important;
+    border-color: var(--nico-dark-2) !important;
+
+    &::before {
+      border-right-color: var(--nico-dark-2) !important;
+    }
+
+    &::after {
+      border-right-color: var(--nico-dark) !important;
+    }
+
+    a {
+      color: var(--text-link) !important;
+    }
+  }
+
+  .SharePanelVisibleActionButton {
+    &:hover {
+      background-color: var(--nico-dark) !important;
+    }
+
+    path {
+      fill: var(--text-secondary) !important;
+    }
+  }
+}
+
+.WatchRecommendation-inner, .DataGrid-Body, .PlaylistItemList-inner {
+  &::-webkit-scrollbar {
+    background: #000 !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--nico-dark-2) !important;
+
+    &:hover {
+      background: var(--nico-dark-4) !important;
+    }
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: #000 !important;
+  }
+}
+
+.LikeActionButton {
+  background-color: var(--like-button-background) !important;
+  color: var(--like-button-text) !important;
+}
+
+.LikeActionButton--default {
+  border-color: var(--like-button-border) !important;
+}
+
+.LikeIcon {
+  #LikeIcon_svg__frame-0, #LikeIcon_svg__frame-1 {
+    path {
+      fill: var(--like-button-text) !important;
+    }
+  }
+}
+
+.LikeReaction-title {
+  color: var(--text-secondary) !important;
+}
+
+.PlayerPanelContainer {
+  background-color: #000 !important;
+
+  .PlayerPanelContainer-tabItem:not(.current) {
+    border-bottom-color: var(--nico-dark) !important;
+  }
+}
+
+.CommentPanelContainer {
+  background-color: #000 !important;
+}
+
+.CommentPanelDataGrid-HeaderCell {
+  background-color: var(--nico-dark) !important;
+  color: var(--text-secondary) !important;
+  border-right-color: var(--nico-dark-2) !important;
+}
+
+.CommentPanelMenuContainer svg {
+  fill: var(--text-secondary) !important;
+}
+
+.CommentPanelDataGrid {
+  color: var(--text-secondary) !important;
+
+  .CommentPanelDataGrid-TableRow {
+    &:hover {
+      background-color: var(--nico-dark) !important;
+      color: var(--text-primary) !important;
+    }
+
+    &[data-row-nicoru-rank]:not([data-row-nicoru-rank="0"]) {
+      color: var(--text-primary) !important;
+    }
+
+    &[data-row-nicoru-rank="1"] {
+      background-color: hsl(50, 10%, 25%) !important;
+    }
+
+    &[data-row-nicoru-rank="2"] {
+      background-color: hsl(50, 20%, 35%) !important;
+    }
+
+    &[data-row-nicoru-rank="3"] {
+      background-color: hsl(50, 30%, 45%) !important;
+    }
+  }
+
+  .CommentPanelDataGrid-TableCell {
+    border-right-color: var(--nico-dark-1) !important;
+  }
+}
+
+.BottomContainer {
+  background-color: var(--body) !important;
+
+  .Card {
+    background-color: var(--nico-dark) !important;
+
+    .Card-title {
+      color: var(--text-primary) !important;
+    }
+
+    .ContentTree-summary {
+      .ContentTree-summaryLabel {
+        color: var(--text-primary) !important;
+      }
+
+      a {
+        color: var(--text-primary) !important;
+      }
+
+      path {
+        fill: var(--text-primary) !important;
+      }
+    }
+  }
+
+  .ContentTreeItem-title, .UadVideoItem-title {
+    color: var(--text-link) !important;
+  }
+
+  .RectangleAdContainer .Advertisement {
+    background-color: var(--nico-dark) !important;
+  }
+
+  .IchibaForWatch {
+    background-color: var(--nico-dark) !important;
+
+    .IchibaForWatch_Title_Body {
+      color: var(--text-primary) !important;
+    }
+
+    .IchibaMainItem_Name {
+      color: var(--text-link) !important;
+    }
+
+    .IchibaMainItem_Info, .IchibaMainItem_Price_Number {
+      color: var(--text-secondary) !important;
+    }
+
+    .IchibaMainItem_Thumbnail {
+      border-color: var(--nico-dark-2) !important;
+    }
+  }
+}
+
+// (?)ボタン
+.NicoDicIcon.is-unavailable, .IchibaForWatch_Title_Hint {
+  background-color: var(--dic-icon-background) !important;
+
+  &:hover {
+    background-color: var(--dic-icon-background-hover) !important;
+  }
+}
+
+.GiftButton {
+  background-color: var(--nico-dark) !important;
+
+  .GiftIcon path {
+    fill: var(--text-secondary) !important;
+  }
+
+  .GiftButton-point {
+    color: var(--text-secondary) !important;
+  }
+}
+
+.GiftSubEffectContainer-balloon {
+  background-color: var(--nico-dark) !important;
+  border-color: var(--nico-dark-2) !important;
+
+  &::before {
+    border-right-color: var(--nico-dark-2) !important;
+  }
+
+  &::after {
+    border-right-color: var(--nico-dark) !important;
+  }
+
+  .GiftSubEffectDefault {
+    color: var(--text-secondary) !important;
+  }
+
+  .GiftSubEffectConductor {
+    color: var(--text-link) !important;
+  }
+}
+
+.FeedbackLink {
+  background-color: var(--nico-dark) !important;
+
+  path {
+    fill: var(--text-secondary) !important;
+  }
+}
+
+.SearchBox {
+  background-color: var(--nico-dark) !important;
+  border-color: var(--nico-dark-2) !important;
+
+  path {
+    fill: var(--text-secondary) !important;
+  }
+
+  .SearchBox-input {
+    box-shadow: none !important;
+  }
+
+  .SearchBox-optionMenu {
+    background-color: var(--nico-dark) !important;
+    border-color: var(--nico-dark-2) !important;
+
+    .SearchBox-optionMenuItem {
+      color: var(--text-secondary) !important;
+
+      &:hover {
+        background-color: var(--nico-dark-2) !important;
+      }
+    }
+  }
+}
+
+.CommentPanelMenuContainer-pastCommentMenu {
+  background-color: var(--nico-dark-2) !important;
+
+  .DateTimeInput input {
+    box-shadow: none !important;
+    background-color: var(--body) !important;
+    border-color: var(--body-border) !important;
+  }
+}
+
+.SharePanelContainer, .NGSettingPanelContainer {
+  background-color: #000 !important;
+
+  .SharePanelContainer-title {
+    color: var(--text-primary) !important;
+  }
+
+  .SharePanelContainer-content {
+    color: var(--text-secondary) !important;
+  }
+
+  .SharePanelContainer-socialButtons {
+    border-bottom-color: var(--body-border) !important;
+  }
+
+  .SharePanelContainer-textarea, .SharePanelContainer-linkTimeText {
+    color: var(--text-secondary) !important;
+    border-color: var(--nico-dark-2) !important;
+    background-color: var(--nico-dark) !important;
+  }
+
+  .Checkbox .Checkbox-check:before, .SharePanelContainer-radioItem input + label:before {
+    background-color: var(--nico-dark) !important;
+    border-color: var(--nico-dark-2) !important;
+  }
+}
+
+.UserNGList {
+  background: #000 !important;
+
+  .NGSettingPanelContainer-contentMain {
+    background: #000 !important;
+  }
+
+  .UserNGListDataGrid-HeaderCell {
+    background: var(--body) !important;
+    border-right-color: var(--body-border) !important;
+  }
+
+  .UserNGListDataGrid-TableCell {
+    border-right-color: var(--body-border) !important;
+  }
+}
+
+.NGSettingPanelContainer-removeButton:disabled {
+  background-color: var(--nico-dark) !important;
+  color: var(--nico-dark-4);
+}
+
+.VideoMetaOverflowMenuContainer-menu {
+  background-color: var(--nico-dark) !important;
+  border-color: var(--nico-dark-2) !important;
+
+  .VideoMetaOverflowMenuContainer-menuBlock:not(:first-of-type) {
+    border-top-color: var(--nico-dark-2) !important;
+  }
+
+  .VideoMetaOverflowMenuContainer-menuHeading {
+    color: var(--text-secondary) !important;
+  }
+
+  a {
+    color: var(--text-link) !important;
+  }
+}

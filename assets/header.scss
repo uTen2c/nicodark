@@ -1,0 +1,89 @@
+@import "variables";
+
+.nico-CommonHeaderRoot {
+  .common-header-n0qa7l {
+    color: var(--text-primary) !important;
+  }
+
+  .common-header-1ke4cb6, .common-header-1xzs4ko {
+    background-color: var(--dropdown-background) !important;
+  }
+
+  .common-header-1xzs4ko:hover {
+    background-color: var(--dropdown-background-hover) !important;
+  }
+
+  // アカウント設定ボタン
+  .common-header-z5pyn9:hover {
+    background-color: var(--dropdown-background-hover) !important;
+  }
+
+  // カテゴリー
+  .common-header-yxm7eu {
+    color: var(--text-primary) !important;
+    border-color: var(--dropdown-border) !important;
+    background-color: var(--dropdown-background-secondary) !important;
+  }
+
+  .common-header-z0oejq path {
+    fill: var(--text-secondary) !important;
+  }
+
+  .common-header-jmhvxm {
+    color: var(--text-secondary) !important;
+  }
+
+  // フッター
+  .common-header-1xmxna8 {
+    background-color: var(--dropdown-background-secondary) !important;
+
+    .common-header-1yxywo9 {
+      color: var(--text-primary) !important;
+    }
+
+    .common-header-8g5w98 {
+      &:hover {
+        background-color: var(--dropdown-button-hover) !important;
+      }
+
+      path {
+        fill: var(--text-secondary) !important;
+      }
+    }
+
+    .common-header-ndczso {
+      color: var(--text-secondary) !important;
+    }
+  }
+
+  .common-header-cvcm83 > * {
+    border-color: var(--dropdown-border) !important;
+  }
+
+  .common-header-17f7oiq {
+    & > * {
+      border-color: var(--dropdown-border) !important;
+    }
+
+    .common-header-ddpru6 {
+      color: var(--text-primary) !important;
+    }
+  }
+
+  .common-header-o214xd {
+    background-color: var(--dropdown-background) !important;
+    color: var(--text-primary) !important;
+
+    &:hover {
+      background-color: var(--dropdown-background-hover) !important;
+    }
+  }
+
+  .common-header-15czeyj {
+    background-color: var(--dropdown-background) !important;
+  }
+
+  .common-header-1cznxpg {
+    background-color: var(--dropdown-background-secondary) !important;
+  }
+}

@@ -1,0 +1,14 @@
+@import "variables";
+
+:root {
+  color-scheme: dark;
+}
+
+.BaseLayout {
+  background-color: var(--body) !important;
+  color: var(--text-secondary);
+}
+
+div > a {
+  color: var(--text-link);
+}
