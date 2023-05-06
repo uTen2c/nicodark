@@ -119,8 +119,45 @@
 }
 
 // 左側のメニュー
-.SubMenuLink-label:not(:hover) {
-  color: var(--text-secondary) !important;
+.SubMenuLinkList {
+  .SubMenuLink-link_active {
+    background-color: var(--nico-dark) !important;
+  }
+
+  .SubMenuLink-link_internal:hover {
+    background-color: var(--nico-dark-2) !important;
+  }
+
+  .SubMenuLink-link_internal:not(.SubMenuLink-link_active):not(:hover) > .SubMenuLink-label {
+    color: var(--text-secondary) !important;
+  }
+}
+
+.MylistSideContainer_hasMylistItem .MylistSideContainer-categoryList > :last-child,
+.VideoSideContainer_hasSeriesItems .VideoSideContainer-categoryList > :last-child {
+  border-bottom-color: var(--nico-dark-2) !important;
+}
+
+.MylistSideContainer-mylistList > * {
+  background-color: var(--nico-dark) !important;
+}
+
+.MylistHeader {
+  &::after {
+    background-color: var(--body-border) !important;
+  }
+
+  .MylistHeader-name {
+    color: var(--text-primary) !important;
+  }
+
+  .MylistHeader-metaItem {
+    color: var(--text-secondary) !important;
+  }
+
+  .MylistHeader-metaItemValue {
+    color: var(--text-meta-value) !important;
+  }
 }
 
 .RadioItem {
@@ -144,8 +181,8 @@
 }
 
 .NicorepoItem-item {
-  background-color: var(--nicorepo-item-background) !important;
-  border-color: var(--nicorepo-item-border) !important;
+  background-color: var(--item-background) !important;
+  border-color: var(--item-border) !important;
 
   .NicorepoItem-senderName:not(:hover) {
     color: var(--text-primary) !important;
@@ -168,13 +205,15 @@
   }
 
   .ContentLabel {
-    background-color: var(--nicorepo-item-content-label);
+    background-color: var(--item-content-label);
   }
 }
 
+// スケルトン
+
 .NicorepoItemSkeleton {
-  background-color: var(--nicorepo-item-background) !important;
-  border-color: var(--nicorepo-item-border) !important;
+  background-color: var(--item-background) !important;
+  border-color: var(--item-border) !important;
 
   .NicorepoItemSkeleton-senderIcon,
   .NicorepoItemSkeleton-senderName,
@@ -182,8 +221,50 @@
   .NicorepoItemSkeleton-contentThumbnail,
   .NicorepoItemSkeleton-contentDetailLabel,
   .NicorepoItemSkeleton-contentDetailTitle {
-    background-color: var(--nicorepo-item-skeleton) !important;
+    background-color: var(--item-skeleton) !important;
   }
+}
+
+.FollowOwnerItemSkeletonList > li {
+  border-color: var(--item-border) !important;
+  background-color: var(--item-background) !important;
+
+  figure,
+  h1,
+  .FollowOwnerItemSkeletonList-content1,
+  .FollowOwnerItemSkeletonList-content2,
+  .FollowOwnerItemSkeletonList-follow {
+    background-color: var(--item-skeleton) !important;
+  }
+}
+
+.NC-MylistMediaObjectSkeleton {
+  border-color: var(--item-border) !important;
+  background-color: var(--item-background) !important;
+
+  .NC-MylistMediaObjectSkeleton-body > h1,
+  .NC-MylistMediaObjectSkeleton-description,
+  .NC-MylistMediaObjectSkeleton-follow,
+  .NC-MylistMediaObjectSkeleton-thumbnails > figure {
+    background-color: var(--item-skeleton) !important;
+  }
+
+  .NC-MylistMediaObjectSkeleton-thumbnails {
+    background: none !important;
+  }
+}
+
+.NC-VideoMediaObjectSkeleton > figure,
+.NC-VideoMediaObjectSkeleton-bar {
+  background-color: var(--item-skeleton) !important;
+}
+
+.VideoMediaObjectList > * + * {
+  border-top-color: var(--body-border) !important;
+}
+
+.VideoSideContainer-seriesList > * {
+  background-color: var(--nico-dark) !important;
 }
 
 .PageTopButton {
@@ -207,8 +288,8 @@
     color: var(--text-secondary) !important;
 
     .UserItem-content {
-      background-color: var(--nicorepo-item-background);
-      border-color: var(--nicorepo-item-border);
+      background-color: var(--item-background);
+      border-color: var(--item-border);
 
       .UserItem-description {
         color: var(--text-secondary) !important;
@@ -221,4 +302,76 @@
       color: var(--text-primary) !important;
     }
   }
+}
+
+.NC-MylistMediaObject {
+  background-color: var(--item-background) !important;
+  border-color: var(--item-border) !important;
+  box-shadow: none !important;
+
+  .NC-MediaObject-contents:not(:hover) .NC-MediaObjectTitle {
+    color: var(--text-primary) !important;
+  }
+
+  .NC-MylistMediaObject-thumbnails {
+    background-color: var(--nico-dark) !important;
+    border-color: var(--nico-dark-2) !important;
+  }
+
+  .NC-MylistMediaObject-bodyFollowerCount,
+  .NC-MylistMediaObject-itemCount {
+    color: var(--text-secondary) !important;
+  }
+
+  .NC-MylistMediaObject-thumbnail:nth-of-type(3):before {
+    background: linear-gradient(90deg, hsla(0, 0%, 98%, 0), var(--nico-dark)) !important;
+  }
+}
+
+.UserPage-header {
+  .UserDetailsHeader-icon .UserIcon {
+    background-color: var(--nico-dark) !important;
+  }
+
+  .FollowButton_following {
+    &:not(:hover) {
+      background-color: var(--nico-dark-2) !important;
+      color: var(--text-secondary) !important;
+    }
+
+    &:hover {
+      background-color: var(--nico-dark-4) !important;
+    }
+  }
+
+  .ExpandBox-expanded {
+    color: var(--text-secondary);
+  }
+
+  .ExpandBoxButton-overlay {
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, var(--nico-dark)) !important;
+  }
+
+  .ExpandBoxButton {
+    color: var(--text-secondary) !important;
+  }
+
+  .NC-CreatorSupportAccepting:not(:hover) {
+    &.NC-CreatorSupportAccepting_outlined .NC-CreatorSupportAccepting-content {
+      border-color: var(--nico-dark-4) !important;
+    }
+
+    .NC-CreatorSupportAccepting-arrow {
+      border-color: var(--nico-dark-4) !important;
+      background-color: var(--nico-dark-2) !important;
+    }
+
+    .NC-CreatorSupportAccepting-content {
+      background-color: var(--nico-dark-2) !important;
+    }
+  }
+}
+
+.BlankState-title {
+  color: var(--text-secondary) !important;
 }

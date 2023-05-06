@@ -12,3 +12,21 @@
 div > a {
   color: var(--text-link);
 }
+
+.Selectbox-button {
+  background-color: var(--nico-dark) !important;
+  border-color: var(--nico-dark-2) !important;
+
+  &:hover {
+    border-color: var(--nico-dark-4) !important;
+  }
+
+  .Selectbox-label {
+    color: var(--text-secondary) !important;
+  }
+}
+
+.Selectbox {
+  background-color: var(--nico-dark) !important;
+  box-shadow: none !important;
+}

@@ -5,7 +5,7 @@ export const config: PlasmoCSConfig = {
   css: [
     "../assets/common.scss",
     "../assets/header.scss",
-    "../assets/my.scss",
+    "../assets/user.scss",
     "../assets/watch.scss",
   ],
 };

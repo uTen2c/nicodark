@@ -48,12 +48,14 @@
   }
 }
 
-.NC-CreatorSupportAccepting-content {
-  background-color: var(--badge-background) !important;
-}
+.VideoOwnerInfo {
+  .NC-CreatorSupportAccepting-content {
+    background-color: var(--badge-background) !important;
+  }
 
-.NC-CreatorSupportAccepting-arrow {
-  background-color: var(--badge-background) !important;
+  .NC-CreatorSupportAccepting-arrow {
+    background-color: var(--badge-background) !important;
+  }
 }
 
 .VideoDescriptionSeriesContainer {
@@ -561,5 +563,53 @@
 
   a {
     color: var(--text-link) !important;
+  }
+}
+
+.VideoContainer-headerMenuSortSelectboxItem:hover {
+  background-color: var(--nico-dark-2) !important;
+}
+
+.ContinuousPlayButton {
+  background-color: var(--nico-dark) !important;
+  border-color: var(--nico-dark-2) !important;
+  color: var(--text-secondary) !important;
+
+  .ContinuousPlayButton-icon {
+    fill: var(--text-secondary) !important;
+  }
+
+  &:hover {
+    color: var(--text-primary) !important;
+    background-color: var(--nico-dark-4) !important;
+    border-color: var(--nico-dark-4) !important;
+
+    .ContinuousPlayButton-icon {
+      fill: var(--text-primary) !important;
+    }
+  }
+}
+
+.VideoContainer-headerTotalCount {
+  color: var(--text-secondary) !important;
+
+  .VideoContainer-headerTotalCountValue {
+    color: var(--text-meta-value) !important;
+  }
+}
+
+.PaginationItem {
+  background-color: var(--nico-dark) !important;
+  border-color: var(--nico-dark-2) !important;
+  color: var(--text-secondary) !important;
+
+  svg {
+    fill: var(--text-secondary);
+  }
+
+  &:hover, &.PaginationItem_selected {
+    background-color: var(--nico-dark-4) !important;
+    border-color: var(--nico-dark-4) !important;
+    color: var(--text-primary) !important;
   }
 }
